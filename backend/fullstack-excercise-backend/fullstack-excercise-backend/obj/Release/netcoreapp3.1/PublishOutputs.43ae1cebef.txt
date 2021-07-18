@@ -1,0 +1,12 @@
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\fullstack-excercise-backend.exe
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Files\sample-1.csv
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Files\sample-2.csv
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Files\sample-3.pdf
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Files\sample-4.doc
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Files\sample-5.doc
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\fullstack-excercise-backend.dll
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\fullstack-excercise-backend.deps.json
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\fullstack-excercise-backend.runtimeconfig.json
+D:\techextensor\fullstack-excercise\backend\fullstack-excercise-backend\fullstack-excercise-backend\obj\Release\netcoreapp3.1\PubTmp\Out\fullstack-excercise-backend.pdb

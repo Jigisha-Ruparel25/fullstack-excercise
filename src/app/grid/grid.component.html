@@ -1,0 +1,69 @@
+<div class="row" >
+    <div class="col-md-12">
+        <div class="text-right">
+            <div class="btn-group" mdbDropdown>
+                <button mdbDropdownToggle type="button" mdbBtn class="dropdown-toggle waves-light share-button"
+                    mdbWavesEffect>
+                    Share
+                </button>
+                <div class="dropdown-menu dropdown-primary">
+                    <button class="dropdown-item" (click)="open(content)">Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 mt-2 full-height">
+        <ag-grid-angular
+            #agGrid
+            class="ag-theme-alpine"
+            style="width: 100%; height: 100%;"
+            [rowData]="rowData"
+            [columnDefs]="columnDefs"
+            [pagination]="true"
+            [defaultColDef]="defaultColDef"
+            [serverSideDatasource]="true"
+            (gridReady)="onGridReady($event)"
+         >
+        </ag-grid-angular>
+    </div>
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Send Email</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <mdb-checkbox [(ngModel)]="selectedAll" (change)="onChangeSelectAll($event)" [default]="true">Select All</mdb-checkbox>
+        <mdb-checkbox [(ngModel)]="isCSV" (change)="onChangeEvent($event, isCSV)" [default]="true">CSV</mdb-checkbox>
+        <mdb-checkbox [(ngModel)]="isPDF" (change)="onChangeEvent($event, isPDF)" [default]="true">Pdf</mdb-checkbox>
+        <mdb-checkbox [(ngModel)]="isDOC" (change)="onChangeEvent($event, isDOC)" [default]="true">Doc</mdb-checkbox>
+
+        <form [formGroup]="emailForm">
+            <div class="input-group" style="margin-top: 8px;">
+                <input class="form-control" id="email" type="email" formControlName="email" placeholder="Email" style="margin-right: 8px;">
+                <input class="form-control" type="text" id="subject" formControlName="subject"  placeholder="Subject">
+            </div>
+            <span class="text-danger" *ngIf="submitted && f.email.errors?.required" style="margin-right: 104px;">Please enter email</span>
+            <span class="text-danger" *ngIf="submitted && f.subject.errors?.required">Please enter subject</span>
+            <div class="input-group" style="margin-top: 8px;">
+                <input class="form-control" type="email" id="cc" formControlName="cc"  placeholder="CC" style="margin-right: 8px;">
+                <input class="form-control" type="email" id="bcc" formControlName="bcc"  placeholder="BCC">
+            </div>
+            <span class="text-danger" *ngIf="submitted && f.cc.errors?.pattern" style="margin-right: 104px;">Please enter valid CC</span>
+            <span class="text-danger" *ngIf="submitted && f.bcc.errors?.pattern">Please enter valid BCC</span>
+            <div class="input-group" style="margin-top: 8px;">
+                <textarea class="form-control" id="body" rows="3" formControlName="body" placeholder="Body"></textarea>
+            </div>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="save()">Save</button>
+    </div>
+</ng-template>
+
+

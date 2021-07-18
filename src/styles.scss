@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.full-height {
+    height: 450px;
+}
+.share-button {
+    background-color: #00acac !important;
+    color: #fff !important;
+}
+.ag-header {
+    background-color: #00acac !important;
+}
+.ag-header-cell-text {
+    color: #fff !important;
+}
+
+.alertsContainer {
+    z-index: 999 !important;
+}
